@@ -29,8 +29,15 @@ sbi-ai-banking-assistant/
     ├── routes/        ← 7 route files
     ├── services/      ← aiAgentService (orchestrator) + 5 agents
     └── utils/         ← jwtToken, emailSender
-```
 
+```
+## Configuration
+  Before running the project, update your Gemini API key in the following files:
+     * .env
+     * geminiService.js
+
+  Replace the placeholder API key with your own valid Gemini API key.
+  Also enter your own database password db.js(password column).
 ---
 
 ## Quick Start
