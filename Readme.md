@@ -38,6 +38,7 @@ sbi-ai-banking-assistant/
 
   Replace the placeholder API key with your own valid Gemini API key.
   Also enter your own database password db.js(password column).
+
 ---
 
 ## Quick Start
