@@ -62,8 +62,8 @@ npm run dev
 ## Demo Login
 
 ```
-CIF Number : CIF1234567
-Password   : Demo@1234
+CIF Number : CIF12345726
+Password   : Demo@123
 ```
 
 ---
