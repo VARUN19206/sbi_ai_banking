@@ -1,0 +1,11 @@
+const express = require('express');
+const { getTransactions, getTransaction, getMonthlySummary, getCategoryBreakdown, addTransaction } = require('../controllers/transactionController');
+const { protect } = require('../middleware/authMiddleware');
+const router = express.Router();
+router.use(protect);
+router.get('/', getTransactions);
+router.get('/summary', getMonthlySummary);
+router.get('/categories', getCategoryBreakdown);
+router.get('/:id', getTransaction);
+router.post('/', addTransaction);
+module.exports = router;

@@ -1,0 +1,10 @@
+const express = require('express');
+const { getRecommendations, markRead, dismiss, triggerAgentRun } = require('../controllers/recommendationController');
+const { protect } = require('../middleware/authMiddleware');
+const router = express.Router();
+router.use(protect);
+router.get('/', getRecommendations);
+router.post('/run', triggerAgentRun);
+router.put('/:id/read', markRead);
+router.put('/:id/dismiss', dismiss);
+module.exports = router;
